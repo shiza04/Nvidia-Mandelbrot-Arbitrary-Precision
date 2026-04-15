@@ -1,0 +1,1 @@
+nvcc main.cu -o mandelbrot.exe -I"./include" -L"./lib" -lglew32 -lglfw3 -lopengl32 -lcudart -luser32 -lgdi32 -lshell32 -lkernel32 -lucrt -lvcruntime -lmsvcrt -D_CRT_SECURE_NO_WARNINGS -Xlinker /NODEFAULTLIB:libcmt -arch=sm_90 --use_fast_math
